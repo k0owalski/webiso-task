@@ -1,1 +1,47 @@
-/*# sourceMappingURL=index.css.map */
+:root {
+  --color-primary: #61ddfe;
+  --color-secondary: #312477;
+  --color-accent: #ff7d44;
+  --color-light: #f8f7ff;
+  --color-dark: #291d65;
+}
+
+.custom-bg-primary {
+  background-color: var(--color-primary);
+}
+
+.custom-bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.custom-bg-accent {
+  background-color: var(--color-accent);
+}
+
+.custom-bg-light {
+  background-color: var(--color-light);
+}
+
+.custom-bg-dark {
+  background-color: var(--color-dark);
+}
+
+.custom-text-primary {
+  color: var(--color-primary);
+}
+
+.custom-text-secondary {
+  color: var(--color-secondary);
+}
+
+.custom-text-accent {
+  color: var(--color-accent);
+}
+
+.custom-text-light {
+  color: var(--color-light);
+}
+
+.custom-text-dark {
+  color: var(--color-dark);
+}/*# sourceMappingURL=index.css.map */
