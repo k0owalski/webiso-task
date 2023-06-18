@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Webiso task</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Space+Grotesk:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -18,49 +24,142 @@
 			defer
 		></script>
 	</head>
-	<body>
-		<div class="py-4 custom-bg-dark d-none d-md-block">
-			<div class="container">
-				<div class="row gx-5">
-					<div class="col-auto">
+	<body class="custom-ff-primary fw-light">
+		<header>
+			<div class="topbar px-lg-4 px-xl-5 custom-bg-dark">
+				<div class="container-fluid px-3 px-lg-5 py-3">
+					<div class="row px-lg-5 gx-5 justify-content-between">
 						<a
 							href="mailto:office@fresh.com"
-							class="custom-text-primary d-flex align-items-center column-gap-3"
+							class="col-auto custom-text-primary d-none d-lg-flex align-items-center column-gap-2"
 						>
-							<img src="/icons/email-blue.png" alt="Email" />
-							<span class="d-none d-md-block">office@fresh.com</span>
+							<img src="/icons/email-blue.png" alt="Mail" />
+							<span>office@fresh.com</span>
 						</a>
-					</div>
-					<div
-						class="col d-flex justify-content-end align-items-center column-gap-4"
-					>
 						<a
-							class="custom-text-light text-decoration-none opacity-25"
-							href="#"
-							>About Us</a
+							href="mailto:office@fresh.com"
+							class="col-auto custom-text-primary d-flex d-lg-none align-items-center column-gap-2 text-decoration-none text-white"
 						>
+							<img src="/icons/email-blue.png" alt="Mail" />
+							<span>mail to us</span>
+						</a>
+						<ul
+							class="col list-unstyled d-none d-lg-flex justify-content-end align-items-center column-gap-4 m-0 mx-4"
+						>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#"
+									>Information</a
+								>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#"
+									>Contact</a
+								>
+							</li>
+						</ul>
 						<a
-							class="custom-text-light text-decoration-none opacity-25"
-							href="#"
-							>Information</a
+							href="tel:+48 789 678 567"
+							class="col-auto text-white d-flex align-items-center column-gap-2 text-decoration-none"
 						>
-						<a
-							class="custom-text-light text-decoration-none opacity-25"
-							href="#"
-							>Contact</a
-						>
-					</div>
-					<div class="col-auto">
-						<a
-							href="tel:+48789678567"
-							class="custom-text-light d-flex align-items-center column-gap-3 text-decoration-none"
-						>
-							<img src="/icons/phone-blue.png" alt="Phone" />
-							<span class="d-none d-md-block">+48 789 678 567</span>
+							<img src="/icons/phone-blue.png" alt="Mail" />
+							<span class="d-none d-lg-inline">+48 789 678 567</span>
+							<span class="d-inline d-lg-none">call to us</span>
 						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+			<nav
+				class="navbar navbar-expand-lg custom-bg-secondary px-lg-4 px-xl-5"
+				data-bs-theme="dark"
+			>
+				<div class="container-fluid mx-lg-5 px-3 px-lg-5 py-2 py-lg-4">
+					<div
+						class="navbar-brand d-flex align-items-center column-gap-2"
+						href="#"
+					>
+						<img src="/icons/brand.png" alt="Brand" />
+						<span class="text-uppercase fs-5 fw-bold">FRESH</span>
+					</div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-end py-4 py-lg-0"
+						id="navbarNavDropdown"
+					>
+						<ul class="navbar-nav column-gap-5 row-gap-2 align-items-lg-center">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="/">Home</a>
+							</li>
+							<li class="nav-item d-lg-none d-xxl-block">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Info
+								</a>
+								<ul class="dropdown-menu custom-bg-dark">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+								</ul>
+							</li>
+							<li class="nav-item d-lg-none d-xxl-block">
+								<a class="nav-link" href="#">Gallery</a>
+							</li>
+							<li class="nav-item d-lg-none d-xxl-block">
+								<a class="nav-link" href="#">FAQ</a>
+							</li>
+							<li class="nav-item d-lg-none d-xxl-block">
+								<a class="nav-link" href="#">Review</a>
+							</li>
+							<li class="nav-item dropdown d-none d-lg-block d-xxl-none">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									More
+								</a>
+								<ul class="dropdown-menu custom-bg-dark">
+									<li><a class="dropdown-item" href="#">About us</li>
+									<li><a class="dropdown-item" href="#">Gallery</li>
+									<li><a class="dropdown-item" href="#">FAQ</a></li>
+									<li><a class="dropdown-item" href="#">Review</a></li>
+								</ul>
+							</li>
+							<li class="nav-item mt-3 mt-lg-0 ms-lg-4">
+								<a
+									class="nav-link custom-bg-primary custom-text-dark fw-normal py-3 px-lg-3 px-xxl-5 rounded-pill text-center"
+									href="#"
+								>
+									<span class="mx-lg-3">Contact Us</span></a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 	</body>
 </html>

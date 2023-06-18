@@ -44,4 +44,12 @@
 
 .custom-text-dark {
   color: var(--color-dark);
+}
+
+.custom-ff-primary {
+  font-family: "Be Vietnam Pro";
+}
+
+.custom-ff-secondary {
+  font-family: "Space Grotesk";
 }/*# sourceMappingURL=index.css.map */
