@@ -16,16 +16,17 @@
 			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="/styles/index.css" />
+		<link rel="stylesheet" href="styles/index.css" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"
 			defer
 		></script>
+		<script src="scripts/loadYouTubeAPI.js" defer></script>
 	</head>
 	<body class="custom-ff-primary fw-light">
-		<header>
+		<header class="d-flex flex-column overflow-x-hidden">
 			<div class="topbar px-lg-4 px-xl-5 custom-bg-dark">
 				<div class="container-fluid px-3 px-lg-5 py-3">
 					<div class="row px-lg-5 gx-5 justify-content-between">
@@ -33,14 +34,14 @@
 							href="mailto:office@fresh.com"
 							class="col-auto custom-text-primary d-none d-lg-flex align-items-center column-gap-2"
 						>
-							<img src="/icons/email-blue.png" alt="Mail" />
+							<img src="icons/email-blue.png" alt="Mail" />
 							<span>office@fresh.com</span>
 						</a>
 						<a
 							href="mailto:office@fresh.com"
 							class="col-auto custom-text-primary d-flex d-lg-none align-items-center column-gap-2 text-decoration-none text-white"
 						>
-							<img src="/icons/email-blue.png" alt="Mail" />
+							<img src="icons/email-blue.png" alt="Mail" />
 							<span>mail to us</span>
 						</a>
 						<ul
@@ -66,7 +67,7 @@
 							href="tel:+48 789 678 567"
 							class="col-auto text-white d-flex align-items-center column-gap-2 text-decoration-none"
 						>
-							<img src="/icons/phone-blue.png" alt="Mail" />
+							<img src="icons/phone-blue.png" alt="Mail" />
 							<span class="d-none d-lg-inline">+48 789 678 567</span>
 							<span class="d-inline d-lg-none">call to us</span>
 						</a>
@@ -82,7 +83,7 @@
 						class="navbar-brand d-flex align-items-center column-gap-2"
 						href="#"
 					>
-						<img src="/icons/brand.png" alt="Brand" />
+						<img src="icons/brand.png" alt="Brand" />
 						<span class="text-uppercase fs-5 fw-bold">FRESH</span>
 					</div>
 					<button
@@ -161,5 +162,98 @@
 				</div>
 			</nav>
 		</header>
+		<div class="heading-section pt-5 custom-bg-secondary text-white">
+			<div class="container pt-md-3">
+				<div class="row">
+					<div class="col">
+						<h5 class="fw-light text-white-50">
+							Lorem Ipsum has been the industry's standard
+						</h5>
+					</div>
+				</div>
+				<div class="row align-items-center row-gap-4 row-gap-md-0">
+					<div class="col-12 col-md">
+						<h1 class="display-5 fw-bold custom-ff-secondary">
+							<span>Lorem Ipsum is simply</span>
+							<span class="position-relative text-nowrap">
+								dummy text
+								<img
+									src="images/line.png"
+									alt="Heading"
+									class="position-absolute w-100"
+									style="bottom: 0; right: 0; transform: translateY(100%)"
+							/></span>
+						</h1>
+					</div>
+					<div class="col-12 col-md-auto mt-4 mt-md-0">
+						<button
+							class="btn d-flex align-items-center column-gap-1 column-gap-md-3 column-gap-lg-4 p-0"
+							data-bs-toggle="modal"
+							data-bs-target="#video-modal"
+						>
+							<img
+								class="order-1 flex-shrink-1"
+								src="images/play-cta.png"
+								alt="Play video"
+								style="width: clamp(40px, 10vw, 115px)"
+							/>
+							<span
+								class="text-white-50 text-uppercase custom-bg-secondary rounded-pill p-2"
+								style="font-size: 0.75rem"
+								>Play video</span
+							>
+						</button>
+						<div
+							class="modal fade"
+							tabindex="-1"
+							id="video-modal"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content custom-bg-secondary">
+									<div class="modal-body">
+										<div
+											class="w-100 h-auto"
+											id="video-container"
+											style="aspect-ratio: 16 / 9"
+										></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="banner-section w-100 position-relative overflow-x-hidden z-1"
+			>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 position-relative">
+							<img src="images/header-img.png" alt="Banner" class="w-100" />
+							<img
+								src="images/quarter-circle-blue.png"
+								alt="Background"
+								class="position-absolute bottom-0 z-n1 d-none d-md-block"
+								style="right: 100%; transform: translate(0.75rem, -114px)"
+							/>
+							<img
+								src="images/half-elipse.png"
+								alt="Background"
+								class="position-absolute bottom-0 mh-100 z-n1"
+								style="left: 100%; transform: translate(-0.75rem, 0)"
+							/>
+						</div>
+					</div>
+				</div>
+				<img
+					src="images/quarter-circle-orange.png"
+					alt="Background"
+					class="position-absolute z-n1 mh-100"
+					style="left: -0.75rem; bottom: 0"
+				/>
+			</div>
+		</div>
 	</body>
 </html>

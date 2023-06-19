@@ -52,4 +52,13 @@
 
 .custom-ff-secondary {
   font-family: "Space Grotesk";
+}
+
+.banner-section {
+  transform: translateY(114px);
+}
+@media screen and (min-width: 768px) {
+  .banner-section {
+    transform: translateY(64px);
+  }
 }/*# sourceMappingURL=index.css.map */
