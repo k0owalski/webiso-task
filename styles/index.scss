@@ -50,3 +50,19 @@
 		transform: translateY(64px);
 	}
 }
+
+.card-section .card {
+	border: 1px solid var(--color-light);
+
+	transition: border 0.2s ease;
+
+	&:hover {
+		border: 1px solid var(--color-secondary);
+	}
+
+	& .read-more {
+		&:hover {
+			color: var(--color-primary);
+		}
+	}
+}
